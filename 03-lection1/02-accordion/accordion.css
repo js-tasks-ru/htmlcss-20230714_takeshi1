@@ -20,12 +20,9 @@
   margin: 0;
 }
 
-summary {
-  list-style: none;
-}
-
 .accordion__summary {
   color: var(--black);
+  list-style: none;
 }
 
 .accordion__text {
