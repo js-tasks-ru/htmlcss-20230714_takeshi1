@@ -1,0 +1,31 @@
+.accordion {
+  font-family: 'inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.accordion__details {
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 24px 32px;
+}
+
+.accordion__details[open] {
+  padding-bottom: 32px;
+}
+
+.accordion__details:last-child {
+  margin: 0;
+}
+
+.accordion__summary {
+  color: var(--black);
+  list-style: none;
+}
+
+.accordion__text {
+  padding-top: 16px;
+  color: var(--grey-4);
+}
