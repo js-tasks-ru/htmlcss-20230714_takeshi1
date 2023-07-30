@@ -3,13 +3,18 @@
 @import '../../components/header/header.css';
 @import '../../components/main/main.css';
 @import '../../components/footer/footer.css';
+@import '../../components/container/container.css';
+@import '../../components/card/card.css';
 
 :root {
   --white: #ffffff;
   --black: #212429;
   --pink: #f784ad;
   --purple: #7048e8;
+  --purple2: #5028c6;
   --blue: #374fc7;
+  --blue2: #4263eb;
+  --blue3: #2342c0;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -21,4 +26,9 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+}
+
+html,
+body {
+  height: 100vh;
 }

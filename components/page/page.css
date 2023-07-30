@@ -1,2 +1,10 @@
 .page {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page__main {
+  flex-grow: 1;
 }
