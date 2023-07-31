@@ -18,3 +18,15 @@
   margin: 32px auto 136px auto;
   text-align: center;
 }
+
+.footer__title_component-page {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: var(--grey-3);
+  text-align: center;
+  padding-top: 92px;
+  padding-bottom: 56px;
+}
