@@ -1,18 +1,5 @@
-.button {
-  border: none;
-  border-radius: 8px;
-  background: var(--blue2);
-  padding: 15px 51px 14px;
-  color: var(--white);
-  text-align: center;
-  font-family: 'roboto';
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
 .modal {
-  background: #c4c4c4;
+  background: rgba(196, 196, 196, 0.5);
   position: fixed;
   top: 0;
   right: 0;
