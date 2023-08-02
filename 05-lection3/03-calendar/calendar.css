@@ -38,13 +38,13 @@
   align-items: center;
 }
 
-.calendar__item-range {
+.calendar__item_range {
   background: var(--blue2);
   color: var(--white);
   font-size: 16px;
 }
 
-.calendar__item-range-between {
+.calendar__item_range-between {
   background: rgb(236, 239, 253);
   color: #334d6e;
   font-size: 16px;
