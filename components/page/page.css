@@ -8,3 +8,10 @@
 .page__main {
   flex-grow: 1;
 }
+
+.page_component-page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #f9fafc;
+  height: 100vh;
+}

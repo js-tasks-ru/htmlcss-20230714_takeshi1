@@ -8,3 +8,7 @@
   font-size: 50px;
   margin: 96px 0 77px;
 }
+
+.header_component-page {
+  background-color: var(--white);
+}

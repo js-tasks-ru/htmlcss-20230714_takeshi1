@@ -2,6 +2,11 @@
   font-family: 'inter';
 }
 
+.footer_component-page {
+  padding-top: 92px;
+  padding-bottom: 56px;
+}
+
 .footer__title {
   font-weight: 500;
   font-size: 38px;
@@ -16,5 +21,15 @@
   max-width: 640px;
   line-height: 24px;
   margin: 32px auto 136px auto;
+  text-align: center;
+}
+
+.footer__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: var(--grey-3);
   text-align: center;
 }
