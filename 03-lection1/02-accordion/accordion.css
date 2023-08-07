@@ -16,6 +16,10 @@
   padding-bottom: 32px;
 }
 
+.accordion__details[open] .icon {
+  transform: rotate(180deg);
+}
+
 .accordion__details:last-child {
   margin: 0;
 }
@@ -23,6 +27,8 @@
 .accordion__summary {
   color: var(--black);
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .accordion__text {
