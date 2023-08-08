@@ -8,6 +8,7 @@
 @import '../../components/component/component.css';
 @import '../../components/sidebar/sidebar.css';
 @import '../../03-lection1/01-button/button.css';
+@import '../../components/icons/icon.css';
 
 :root {
   --white: #ffffff;
