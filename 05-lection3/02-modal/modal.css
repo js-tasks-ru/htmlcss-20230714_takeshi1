@@ -41,3 +41,7 @@
   font-weight: 400;
   line-height: 24px;
 }
+
+.modal__close-icon {
+  color: var(--grey-4);
+}
