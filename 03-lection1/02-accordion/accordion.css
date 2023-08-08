@@ -16,7 +16,7 @@
   padding-bottom: 32px;
 }
 
-.accordion__details[open] .icon {
+.accordion__details[open] .accordion__arrow-icon {
   transform: rotate(180deg);
 }
 
