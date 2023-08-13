@@ -38,6 +38,10 @@
   color: var(--grey-2);
 }
 
+.radio__input:focus + .radio__state .radio__text {
+  text-decoration: underline;
+}
+
 .radio__state {
   display: flex;
   align-items: center;
