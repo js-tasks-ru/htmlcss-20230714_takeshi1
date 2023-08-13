@@ -39,6 +39,10 @@
   color: var(--grey-2);
 }
 
+.checkbox__input:focus + .checkbox__state .checkbox__text {
+  text-decoration: underline;
+}
+
 .checkbox__state {
   display: flex;
   align-items: center;
