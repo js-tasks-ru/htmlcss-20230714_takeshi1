@@ -37,6 +37,7 @@
   font-weight: 400;
   line-height: 26px;
   outline: none;
+  transition: 250ms ease;
 }
 
 .input__text:focus {
