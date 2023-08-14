@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./burger-menu.css" />
+    <script defer src="./burger-menu.js"></script>
+  </head>
+  <body>
+    <button id="burger-menu-open" class="burger-menu__button">
+      <svg class="icon">
+        <use href="../../assets/images/icons.svg#menu"></use>
+      </svg>
+    </button>
+    <div class="burger-menu" id="burger-menu">
+      <button id="burger-menu-close" class="burger-menu__button">
+        <svg class="icon">
+          <use href="../../assets/images/icons.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </body>
 </html>

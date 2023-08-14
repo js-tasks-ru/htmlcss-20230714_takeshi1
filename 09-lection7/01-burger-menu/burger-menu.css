@@ -1,0 +1,27 @@
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(127 127, 127, 0.5);
+  transform: translateX(-100vw);
+  transition: 250ms linear;
+  box-sizing: border-box;
+}
+
+.burger-menu[data-open] {
+  transform: translateX(0);
+}
+
+.burger-menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
