@@ -1,9 +1,3 @@
-.togglers {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .toggler {
   position: relative;
   display: inline-block;
