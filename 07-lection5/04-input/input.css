@@ -1,9 +1,3 @@
-.inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .input {
   display: flex;
   flex-direction: column;
@@ -48,16 +42,18 @@
   border-color: var(--success);
 }
 
-.input_success .input__icon {
+.input_success .input__icon_success {
   color: var(--blue);
+  display: block;
 }
 
 .input_invalid .input__text {
   border-color: var(--error);
 }
 
-.input_invalid .input__icon {
+.input_invalid .input__icon_error {
   color: var(--red);
+  display: block;
 }
 
 .input_disabled .input__text,
@@ -72,4 +68,5 @@
   top: 50%;
   right: 16px;
   transform: translate(0, -50%);
+  display: none;
 }
