@@ -1,9 +1,3 @@
-.radios {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .radio {
   position: relative;
   display: inline-block;
