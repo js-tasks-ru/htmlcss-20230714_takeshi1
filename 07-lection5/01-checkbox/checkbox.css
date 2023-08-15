@@ -1,9 +1,3 @@
-.checkboxes {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .checkbox {
   position: relative;
   display: inline-block;
