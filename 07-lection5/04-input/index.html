@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div class="input">
+      <label for="input-1" type="input" class="input__label">Label</label>
+      <div class="input__control">
+        <input
+          id="input-1"
+          type="text"
+          class="input__text"
+          placeholder="Placeholder"
+        />
+      </div>
+    </div>
+    <div class="input">
+      <label for="input-2" type="input" class="input__label">Focus</label>
+      <div class="input__control">
+        <input
+          id="input-2"
+          type="text"
+          class="input__text"
+          value="Field input"
+          autofocus
+        />
+      </div>
+    </div>
+    <div class="input input_success">
+      <label for="input-3" type="input" class="input__label">Success</label>
+      <div class="input__control">
+        <input id="input-3" type="text" class="input__text" value="Success" />
+        <svg class="icon input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success"></use>
+        </svg>
+        <svg class="icon input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="input input_invalid">
+      <label for="input-4" type="input" class="input__label">Error</label>
+      <div class="input__control">
+        <input id="input-4" type="text" class="input__text" value="Error" />
+        <svg class="icon input__icon input__icon_success">
+          <use href="../../assets/images/icons.svg#success"></use>
+        </svg>
+        <svg class="icon input__icon input__icon_error">
+          <use href="../../assets/images/icons.svg#error"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="input">
+      <label for="input-5" type="input" class="input__label">Disabled</label>
+      <div class="input__control">
+        <input id="input-5" type="text" class="input__text" disabled />
+      </div>
+    </div>
+  </body>
 </html>
