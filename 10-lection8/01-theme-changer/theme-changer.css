@@ -1,0 +1,4 @@
+html[data-theme-dark] {
+  background-color: var(--black);
+  --icon-default: var(--grey-3);
+}
