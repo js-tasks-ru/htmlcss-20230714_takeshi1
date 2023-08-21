@@ -9,6 +9,7 @@
 @import '../../components/sidebar/sidebar.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../components/icons/icon.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 
 :root {
   --white: #ffffff;
@@ -30,6 +31,8 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --icon-default: var(--black);
 }
 
 html,
