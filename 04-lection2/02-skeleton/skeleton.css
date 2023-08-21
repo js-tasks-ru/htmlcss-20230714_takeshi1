@@ -14,10 +14,19 @@
 }
 
 .skeleton__avatar {
-  background-color: var(--grey-2);
+  background: linear-gradient(
+    90deg,
+    #dde2e5 0%,
+    #e2e6e8 33.33%,
+    #f3f5f5 52.08%,
+    #e3e7ea 73.96%,
+    #dde2e5 100%
+  );
+  background-size: 200%;
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  animation: 2s linear infinite background-movement;
 }
 
 .skeleton__title {
@@ -29,14 +38,16 @@
 
 .skeleton__line {
   background: linear-gradient(
-    163deg,
+    90deg,
     #dde2e5 0%,
     #e2e6e8 33.33%,
     #f3f5f5 52.08%,
     #e3e7ea 73.96%,
     #dde2e5 100%
   );
+  background-size: 200%;
   height: 20px;
+  animation: 2s linear infinite background-movement;
 }
 
 .skeleton__line_small {
@@ -55,4 +66,14 @@
 
 .skeleton__line_large {
   width: 100%;
+}
+
+@keyframes background-movement {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
 }
