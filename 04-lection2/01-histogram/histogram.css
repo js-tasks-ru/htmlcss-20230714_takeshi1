@@ -36,9 +36,32 @@
   align-items: flex-end;
   gap: 1px;
   height: 50px;
+  animation: appear 1s ease;
 }
 
 .histogram__bar {
   background-color: var(--blue2);
   flex-grow: 1;
+}
+
+@keyframes appear {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+
+  25% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+
+  50% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
 }
