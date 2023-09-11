@@ -1,0 +1,87 @@
+.component-page__content {
+  padding: 16px 10px;
+  background-color: var(--bg-main);
+  box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.component__title {
+  color: var(--text-secondary);
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+
+.component__content {
+  margin-bottom: 32px;
+}
+
+.component__content_grid-button {
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+  gap: 16px;
+}
+
+.component__content_custom-form-elements {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 16px;
+}
+
+.component__content_input {
+  display: block;
+}
+
+.component__content_tooltip {
+  margin: 70px 0 32px 48px;
+}
+
+@media (min-width: 768px) {
+  .component-page__content {
+    padding: 32px 48px;
+  }
+
+  .component__title {
+    font-size: 28px;
+  }
+
+  .component__content_grid-button {
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(2, minmax(100px, 240px));
+    grid-auto-flow: column;
+    gap: 16px;
+  }
+
+  .component__content_custom-form-elements {
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(3, auto);
+    gap: 16px;
+    grid-auto-flow: column;
+  }
+
+  .component__content_input {
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(1, auto);
+    gap: 16px;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .component__content_grid-button {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, auto);
+    grid-auto-flow: row;
+    gap: 16px;
+  }
+
+  .component__content_input {
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(2, auto);
+    gap: 16px;
+    grid-auto-flow: column;
+  }
+}

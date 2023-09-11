@@ -1,2 +1,48 @@
 .sidebar {
+  display: none;
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  font-family: 'Inter';
+}
+
+.sidebar__menu-title {
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--text-primary);
+}
+
+.sidebar__menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 4px;
+}
+
+.sidebar__menu-link {
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: 0.6s;
+}
+
+.sidebar__menu-link:hover {
+  opacity: 0.8;
+  transition: 0.6s;
+}
+
+.sidebar__menu-link_active {
+  color: var(--link);
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }

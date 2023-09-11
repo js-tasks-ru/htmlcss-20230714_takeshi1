@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Component-page</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script defer src="../components/burger-menu/burger-menu.js"></script>
+    <script defer src="../components/theme-changer/theme-changer.js"></script>
+    <script defer src="../assets/preload/preload.js"></script>
+  </head>
+  <body class="body body_component-page preload">
+    <div class="page page_component-page">
+      <header class="header header_component-page">
+        <div class="container">
+          <div class="header__inner">
+            <button
+              id="burger-menu-open"
+              class="burger-menu__button burger-menu__button_component-page"
+            >
+              <svg class="icon">
+                <use href="../assets/images/icons.svg#menu"></use>
+              </svg>
+            </button>
+            <div class="burger-menu" id="burger-menu">
+              <div class="header">
+                <div clas="container">
+                  <div class="header__inner">
+                    <button
+                      id="burger-menu-close"
+                      class="burger-menu__button burger-menu__button_close"
+                    >
+                      <svg class="icon">
+                        <use href="../assets/images/icons.svg#close"></use>
+                      </svg>
+                    </button>
+                    <div class="header__logo">
+                      <svg
+                        height="32"
+                        viewBox="0 0 110 32"
+                        width="110"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g>
+                          <rect
+                            fill="currentColor"
+                            height="30"
+                            width="30"
+                            y="1"
+                          />
+                          <rect
+                            fill="currentColor"
+                            height="32"
+                            rx="16"
+                            width="32"
+                            x="38"
+                          />
+                          <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="theme-changer theme-changer_mobile">
+                  <div class="toggler__text">Dark mode</div>
+                  <label class="toggler">
+                    <input
+                      type="checkbox"
+                      class="toggler__input"
+                      id="theme-changer-mobile"
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="burger-menu__body">
+                  <div class="burger-menu__content">
+                    <div class="burger-menu__content-title">All Components</div>
+                    <nav class="burger-menu__content-links">
+                      <a
+                        href="#"
+                        class="burger-menu__content-link burger-menu__content-link_active"
+                        >Accordion</a
+                      >
+                      <a href="./Avatar.html" class="burger-menu__content-link"
+                        >Avatar</a
+                      >
+                      <a href="./Button.html" class="burger-menu__content-link"
+                        >Button</a
+                      >
+                      <a
+                        href="./Calendar.html"
+                        class="burger-menu__content-link"
+                        >Calendar</a
+                      >
+                      <a
+                        href="./Custom form elements.html"
+                        class="burger-menu__content-link"
+                        >Custom form elements</a
+                      >
+                      <a
+                        href="./Histogram.html"
+                        class="burger-menu__content-link"
+                        >Histogram</a
+                      >
+                      <a href="./Modal.html" class="burger-menu__content-link"
+                        >Modal</a
+                      >
+                      <a
+                        href="./Skeleton.html"
+                        class="burger-menu__content-link"
+                        >Skeleton</a
+                      >
+                      <a href="./Tooltip.html" class="burger-menu__content-link"
+                        >Tooltip</a
+                      >
+                    </nav>
+                  </div>
+                  <div class="burger-menu__content">
+                    <div class="burger-menu__content-title">Complex</div>
+                    <nav class="burger-menu__content-links">
+                      <a
+                        href="#"
+                        class="burger-menu__content-link burger-menu__content-link_active"
+                        >Accordion</a
+                      >
+                      <a
+                        href="./Calendar.html"
+                        class="burger-menu__content-link"
+                        >Calendar</a
+                      >
+                      <a
+                        href="./Histogram.html"
+                        class="burger-menu__content-link"
+                        >Histogram</a
+                      >
+                      <a href="./Modal.html" class="burger-menu__content-link"
+                        >Modal</a
+                      >
+                      <a
+                        href="./Skeleton.html"
+                        class="burger-menu__content-link"
+                        >Skeleton</a
+                      >
+                      <a href="./Tooltip.html" class="burger-menu__content-link"
+                        >Tooltip</a
+                      >
+                    </nav>
+                  </div>
+                  <div class="burger-menu__content">
+                    <div class="burger-menu__content-title">Simple</div>
+                    <nav class="burger-menu__content-links">
+                      <a href="./Avatar.html" class="burger-menu__content-link"
+                        >Avatar</a
+                      >
+                      <a href="./Button.html" class="burger-menu__content-link"
+                        >Button</a
+                      >
+                      <a
+                        href="./Custom form elements.html"
+                        class="burger-menu__content-link"
+                        >Custom form elements</a
+                      >
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="../index.html"
+              class="header__logo header__logo_component-page"
+            >
+              <svg
+                height="32"
+                viewBox="0 0 110 32"
+                width="110"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect fill="currentColor" height="30" width="30" y="1" />
+                  <rect
+                    fill="currentColor"
+                    height="32"
+                    rx="16"
+                    width="32"
+                    x="38"
+                  />
+                  <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+                </g>
+              </svg>
+            </a>
+            <div class="header__content">
+              <nav class="header__content-menu">
+                <a href="../index.html" class="header__content-menu-item"
+                  >Components</a
+                >
+                <a href="#" class="header__content-menu-item">About</a>
+                <a href="#" class="header__content-menu-item">Contact</a>
+              </nav>
+              <div class="header__content-theme-changer">
+                <div class="theme-changer">
+                  <label class="toggler">
+                    <input
+                      type="checkbox"
+                      class="toggler__input"
+                      id="theme-changer"
+                    />
+                    <div class="toggler__state">
+                      <svg class="icon">
+                        <use href="../assets/images/icons.svg#sun"></use>
+                      </svg>
+                      <div class="toggler__control"></div>
+                      <svg class="icon">
+                        <use href="../assets/images/icons.svg#moon"></use>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="main_component-page">
+            <aside class="sidebar">
+              <div class="sidebar__menu">
+                <div class="sidebar__menu-title">All Components</div>
+                <nav class="sidebar__menu-links">
+                  <a
+                    href="#"
+                    class="sidebar__menu-link sidebar__menu-link_active"
+                    >Accordion</a
+                  >
+                  <a href="./Avatar.html" class="sidebar__menu-link">Avatar</a>
+                  <a href="./Button.html" class="sidebar__menu-link">Button</a>
+                  <a href="./Calendar.html" class="sidebar__menu-link"
+                    >Calendar</a
+                  >
+                  <a
+                    href="./Custom form elements.html"
+                    class="sidebar__menu-link"
+                    >Custom form elements</a
+                  >
+                  <a href="./Histogram.html" class="sidebar__menu-link"
+                    >Histogram</a
+                  >
+                  <a href="./Modal.html" class="sidebar__menu-link">Modal</a>
+                  <a href="./Skeleton.html" class="sidebar__menu-link"
+                    >Skeleton</a
+                  >
+                  <a href="./Tooltip.html" class="sidebar__menu-link"
+                    >Tooltip</a
+                  >
+                </nav>
+              </div>
+              <div class="sidebar__menu">
+                <div class="sidebar__menu-title">Complex</div>
+                <nav class="sidebar__menu-links">
+                  <a
+                    href="#"
+                    class="sidebar__menu-link sidebar__menu-link_active"
+                    >Accordion</a
+                  >
+                  <a href="./Calendar.html" class="sidebar__menu-link"
+                    >Calendar</a
+                  >
+                  <a href="./Histogram.html" class="sidebar__menu-link"
+                    >Histogram</a
+                  >
+                  <a href="./Modal.html" class="sidebar__menu-link">Modal</a>
+                  <a href="./Skeleton.html" class="sidebar__menu-link"
+                    >Skeleton</a
+                  >
+                  <a href="./Tooltip.html" class="sidebar__menu-link"
+                    >Tooltip</a
+                  >
+                </nav>
+              </div>
+              <div class="sidebar__menu">
+                <div class="sidebar__menu-title">Simple</div>
+                <nav class="sidebar__menu-links">
+                  <a href="./Avatar.html" class="sidebar__menu-link">Avatar</a>
+                  <a href="./Button.html" class="sidebar__menu-link">Button</a>
+                  <a
+                    href="./Custom form elements.html"
+                    class="sidebar__menu-link"
+                    >Custom form elements</a
+                  >
+                </nav>
+              </div>
+            </aside>
+            <div class="component-page__content">
+              <div class="component">
+                <div class="component__title">Accordion</div>
+                <div class="component__content">
+                  <div class="accordion">
+                    <details class="accordion__details">
+                      <summary class="accordion__summary">
+                        Accordion item 1
+                        <svg class="icon accordion__arrow-icon">
+                          <use href="../assets/images/icons.svg#arrow"></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </p>
+                    </details>
+                    <details class="accordion__details">
+                      <summary class="accordion__summary">
+                        Accordion item 2
+                        <svg class="icon accordion__arrow-icon">
+                          <use href="../assets/images/icons.svg#arrow"></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </p>
+                    </details>
+                    <details class="accordion__details">
+                      <summary class="accordion__summary">
+                        Accordion item 3
+                        <svg class="icon accordion__arrow-icon">
+                          <use href="../assets/images/icons.svg#arrow"></use>
+                        </svg>
+                      </summary>
+                      <p class="accordion__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs component__tabs">
+                <input
+                  type="radio"
+                  id="#html-tab"
+                  name="code"
+                  value="html"
+                  class="tabs__trigger tabs__trigger-html"
+                  checked
+                />
+                <input
+                  type="radio"
+                  id="#css-tab"
+                  name="code"
+                  value="css"
+                  class="tabs__trigger tabs__trigger-css"
+                />
+
+                <div class="tabs__scroller">
+                  <label
+                    for="#html-tab"
+                    class="tabs__tab-item tabs__tab-item-html"
+                    >HTML</label
+                  >
+                  <label
+                    for="#css-tab"
+                    class="tabs__tab-item tabs__tab-item-css"
+                    >CSS</label
+                  >
+                </div>
+                <div class="tabs__divider"></div>
+                <div class="tabs__content tabs__content_html">
+                  <figure>
+                    <pre>
+                      <code>
+&lt;div class=&quot;accordion&quot;&gt;
+  &lt;details class=&quot;accordion__details&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      Accordion item 1
+      &lt;svg class=&quot;icon accordion__arrow-icon&quot;&gt;
+        &lt;use href=&quot;../assets/images/icons.svg#arrow&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua
+      dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud
+      amet.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;accordion__details&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      Accordion item 2
+      &lt;svg class=&quot;icon accordion__arrow-icon&quot;&gt;
+        &lt;use href=&quot;../assets/images/icons.svg#arrow&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua
+      dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud
+      amet.
+    &lt;/p&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;accordion__details&quot;&gt;
+    &lt;summary class=&quot;accordion__summary&quot;&gt;
+      Accordion item 3
+      &lt;svg class=&quot;icon accordion__arrow-icon&quot;&gt;
+        &lt;use href=&quot;../assets/images/icons.svg#arrow&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/summary&gt;
+    &lt;p class=&quot;accordion__text&quot;&gt;
+      Amet minim mollit non deserunt ullamco est sit aliqua
+      dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud
+      amet.
+    &lt;/p&gt;
+  &lt;/details&gt;
+&lt;/div&gt;
+                      </code>
+                    </pre>
+                  </figure>
+                </div>
+                <div class="tabs__content tabs__content_css">
+                  <figure>
+                    <pre>
+                      <code>
+.accordion {
+  font-family: 'inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.accordion__details {
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 24px 32px;
+}
+
+.accordion__details[open] {
+  padding-bottom: 32px;
+}
+
+.accordion__details[open] .accordion__arrow-icon {
+  transform: rotate(180deg);
+}
+
+.accordion__details:last-child {
+  margin: 0;
+}
+
+.accordion__summary {
+  color: var(--text-primary);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__text {
+  padding-top: 16px;
+  color: var(--text-secondary);
+}
+
+.accordion__arrow-icon {
+  color: var(--icon-default);
+}                        
+                        </code>
+                      </pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer footer_component-page">
+        <div class="container">
+          <p class="footer__text">Reusable component library</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
