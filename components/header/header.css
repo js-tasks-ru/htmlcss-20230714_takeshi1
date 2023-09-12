@@ -1,14 +1,67 @@
 .header {
   font-family: 'Inter';
-}
-
-.header__title {
-  font-weight: 500;
-  line-height: 64px;
-  font-size: 50px;
-  margin: 96px 0 77px;
+  padding: 24px 0;
 }
 
 .header_component-page {
-  background-color: var(--white);
+  padding-bottom: 48px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  display: inline-flex;
+  color: var(--logo-color);
+}
+
+.header__logo_component-page {
+  color: var(--logo-color-component-page);
+}
+
+.header__content {
+  display: none;
+}
+
+.header__content-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header__content-theme-changer {
+  display: flex;
+}
+
+.header__content-menu-item {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: 0.6s;
+}
+
+.header__content-menu-item:hover {
+  color: var(--content-text);
+  transition: 0.6s;
+}
+
+@media (min-width: 768px) {
+  .header__content {
+    display: flex;
+    gap: 56px;
+  }
+
+  .header__inner {
+    justify-content: space-between;
+  }
+
+  .header_component-page {
+    padding-bottom: 60px;
+  }
 }

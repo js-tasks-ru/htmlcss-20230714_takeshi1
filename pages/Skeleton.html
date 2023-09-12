@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Component-page</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script defer src="../components/burger-menu/burger-menu.js"></script>
+    <script defer src="../components/theme-changer/theme-changer.js"></script>
+    <script defer src="../assets/preload/preload.js"></script>
+  </head>
+  <body class="body body_component-page preload">
+    <div class="page page_component-page">
+      <header class="header header_component-page">
+        <div class="container">
+          <div class="header__inner">
+            <button
+              id="burger-menu-open"
+              class="burger-menu__button burger-menu__button_component-page"
+            >
+              <svg class="icon">
+                <use href="../assets/images/icons.svg#menu"></use>
+              </svg>
+            </button>
+            <div class="burger-menu" id="burger-menu">
+              <div class="header">
+                <div clas="container">
+                  <div class="header__inner">
+                    <button
+                      id="burger-menu-close"
+                      class="burger-menu__button burger-menu__button_close"
+                    >
+                      <svg class="icon">
+                        <use href="../assets/images/icons.svg#close"></use>
+                      </svg>
+                    </button>
+                    <div class="header__logo">
+                      <svg
+                        height="32"
+                        viewBox="0 0 110 32"
+                        width="110"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g>
+                          <rect
+                            fill="currentColor"
+                            height="30"
+                            width="30"
+                            y="1"
+                          />
+                          <rect
+                            fill="currentColor"
+                            height="32"
+                            rx="16"
+                            width="32"
+                            x="38"
+                          />
+                          <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="theme-changer theme-changer_mobile">
+                  <div class="toggler__text">Dark mode</div>
+                  <label class="toggler">
+                    <input
+                      type="checkbox"
+                      class="toggler__input"
+                      id="theme-changer-mobile"
+                    />
+                    <div class="toggler__state">
+                      <div class="toggler__control"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="burger-menu__body">
+                  <div class="burger-menu__content">
+                    <div class="burger-menu__content-title">All Components</div>
+                    <nav class="burger-menu__content-links">
+                      <a
+                        href="./Accordion.html"
+                        class="burger-menu__content-link"
+                        >Accordion</a
+                      >
+                      <a href="./Avatar.html" class="burger-menu__content-link"
+                        >Avatar</a
+                      >
+                      <a href="./Button.html" class="burger-menu__content-link"
+                        >Button</a
+                      >
+                      <a
+                        href="./Calendar.html"
+                        class="burger-menu__content-link"
+                        >Calendar</a
+                      >
+                      <a
+                        href="./Custom form elements.html"
+                        class="burger-menu__content-link"
+                        >Custom form elements</a
+                      >
+                      <a
+                        href="./Histogram.html"
+                        class="burger-menu__content-link"
+                        >Histogram</a
+                      >
+                      <a href="./Modal.html" class="burger-menu__content-link"
+                        >Modal</a
+                      >
+                      <a
+                        href="#"
+                        class="burger-menu__content-link burger-menu__content-link_active"
+                        >Skeleton</a
+                      >
+                      <a href="./Tooltip.html" class="burger-menu__content-link"
+                        >Tooltip</a
+                      >
+                    </nav>
+                  </div>
+                  <div class="burger-menu__content">
+                    <div class="burger-menu__content-title">Complex</div>
+                    <nav class="burger-menu__content-links">
+                      <a
+                        href="./Accordion.html"
+                        class="burger-menu__content-link"
+                        >Accordion</a
+                      >
+                      <a
+                        href="./Calendar.html"
+                        class="burger-menu__content-link"
+                        >Calendar</a
+                      >
+                      <a
+                        href="./Histogram.html"
+                        class="burger-menu__content-link"
+                        >Histogram</a
+                      >
+                      <a href="./Modal.html" class="burger-menu__content-link"
+                        >Modal</a
+                      >
+                      <a
+                        href="#"
+                        class="burger-menu__content-link burger-menu__content-link_active"
+                        >Skeleton</a
+                      >
+                      <a href="./Tooltip.html" class="burger-menu__content-link"
+                        >Tooltip</a
+                      >
+                    </nav>
+                  </div>
+                  <div class="burger-menu__content">
+                    <div class="burger-menu__content-title">Simple</div>
+                    <nav class="burger-menu__content-links">
+                      <a href="./Avatar.html" class="burger-menu__content-link"
+                        >Avatar</a
+                      >
+                      <a href="./Button.html" class="burger-menu__content-link"
+                        >Button</a
+                      >
+                      <a
+                        href="./Custom form elements.html"
+                        class="burger-menu__content-link"
+                        >Custom form elements</a
+                      >
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="../index.html"
+              class="header__logo header__logo_component-page"
+            >
+              <svg
+                height="32"
+                viewBox="0 0 110 32"
+                width="110"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect fill="currentColor" height="30" width="30" y="1" />
+                  <rect
+                    fill="currentColor"
+                    height="32"
+                    rx="16"
+                    width="32"
+                    x="38"
+                  />
+                  <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+                </g>
+              </svg>
+            </a>
+            <div class="header__content">
+              <nav class="header__content-menu">
+                <a href="../index.html" class="header__content-menu-item"
+                  >Components</a
+                >
+                <a href="#" class="header__content-menu-item">About</a>
+                <a href="#" class="header__content-menu-item">Contact</a>
+              </nav>
+              <div class="header__content-theme-changer">
+                <div class="theme-changer">
+                  <label class="toggler">
+                    <input
+                      type="checkbox"
+                      class="toggler__input"
+                      id="theme-changer"
+                    />
+                    <div class="toggler__state">
+                      <svg class="icon">
+                        <use href="../assets/images/icons.svg#sun"></use>
+                      </svg>
+                      <div class="toggler__control"></div>
+                      <svg class="icon">
+                        <use href="../assets/images/icons.svg#moon"></use>
+                      </svg>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="main_component-page">
+            <aside class="sidebar">
+              <div class="sidebar__menu">
+                <div class="sidebar__menu-title">All Components</div>
+                <nav class="sidebar__menu-links">
+                  <a href="./Accordion.html" class="sidebar__menu-link"
+                    >Accordion</a
+                  >
+                  <a href="./Avatar.html" class="sidebar__menu-link">Avatar</a>
+                  <a href="./Button.html" class="sidebar__menu-link">Button</a>
+                  <a href="./Calendar.html" class="sidebar__menu-link"
+                    >Calendar</a
+                  >
+                  <a
+                    href="./Custom form elements.html"
+                    class="sidebar__menu-link"
+                    >Custom form elements</a
+                  >
+                  <a href="./Histogram.html" class="sidebar__menu-link"
+                    >Histogram</a
+                  >
+                  <a href="./Modal.html" class="sidebar__menu-link">Modal</a>
+                  <a
+                    href="#"
+                    class="sidebar__menu-link sidebar__menu-link_active"
+                    >Skeleton</a
+                  >
+                  <a href="./Tooltip.html" class="sidebar__menu-link"
+                    >Tooltip</a
+                  >
+                </nav>
+              </div>
+              <div class="sidebar__menu">
+                <div class="sidebar__menu-title">Complex</div>
+                <nav class="sidebar__menu-links">
+                  <a href="./Accordion.html" class="sidebar__menu-link"
+                    >Accordion</a
+                  >
+                  <a href="./Calendar.html" class="sidebar__menu-link"
+                    >Calendar</a
+                  >
+                  <a href="./Histogram.html" class="sidebar__menu-link"
+                    >Histogram</a
+                  >
+                  <a href="./Modal.html" class="sidebar__menu-link">Modal</a>
+                  <a
+                    href="#"
+                    class="sidebar__menu-link sidebar__menu-link_active"
+                    >Skeleton</a
+                  >
+                  <a href="./Tooltip.html" class="sidebar__menu-link"
+                    >Tooltip</a
+                  >
+                </nav>
+              </div>
+              <div class="sidebar__menu">
+                <div class="sidebar__menu-title">Simple</div>
+                <nav class="sidebar__menu-links">
+                  <a href="./Avatar.html" class="sidebar__menu-link">Avatar</a>
+                  <a href="./Button.html" class="sidebar__menu-link">Button</a>
+                  <a
+                    href="./Custom form elements.html"
+                    class="sidebar__menu-link"
+                    >Custom form elements</a
+                  >
+                </nav>
+              </div>
+            </aside>
+            <div class="component-page__content">
+              <div class="component">
+                <div class="component__title">Skeleton</div>
+                <div class="component__content">
+                  <div class="skeleton">
+                    <div class="skeleton__header">
+                      <div class="skeleton__avatar"></div>
+                      <div class="skeleton__title">
+                        <div class="skeleton__line skeleton__line_small"></div>
+                        <div class="skeleton__line skeleton__line_medium"></div>
+                      </div>
+                    </div>
+                    <div class="skeleton__info">
+                      <div class="skeleton__line skeleton__line_large"></div>
+                      <div class="skeleton__line skeleton__line_large"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs component__tabs">
+                <input
+                  type="radio"
+                  id="#html-tab"
+                  name="code"
+                  value="html"
+                  class="tabs__trigger tabs__trigger-html"
+                  checked
+                />
+                <input
+                  type="radio"
+                  id="#css-tab"
+                  name="code"
+                  value="css"
+                  class="tabs__trigger tabs__trigger-css"
+                />
+
+                <div class="tabs__scroller">
+                  <label
+                    for="#html-tab"
+                    class="tabs__tab-item tabs__tab-item-html"
+                    >HTML</label
+                  >
+                  <label
+                    for="#css-tab"
+                    class="tabs__tab-item tabs__tab-item-css"
+                    >CSS</label
+                  >
+                </div>
+                <div class="tabs__divider"></div>
+                <div class="tabs__content tabs__content_html">
+                  <figure>
+                    <pre>
+                      <code>
+&lt;div class=&quot;skeleton&quot;&gt;
+  &lt;div class=&quot;skeleton__header&quot;&gt;
+    &lt;div class=&quot;skeleton__avatar&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;skeleton__title&quot;&gt;
+      &lt;div class=&quot;skeleton__line skeleton__line_small&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;skeleton__line skeleton__line_medium&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;skeleton__info&quot;&gt;
+    &lt;div class=&quot;skeleton__line skeleton__line_large&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;skeleton__line skeleton__line_large&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;         
+                      </code>
+                    </pre>
+                  </figure>
+                </div>
+                <div class="tabs__content tabs__content_css tabs__content_code">
+                  <figure>
+                    <pre>
+                      <code>
+.skeleton {
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 24px 40px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skeleton__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.skeleton__avatar {
+  background: linear-gradient(
+    90deg,
+    #dde2e5 0%,
+    #e2e6e8 33.33%,
+    #f3f5f5 52.08%,
+    #e3e7ea 73.96%,
+    #dde2e5 100%
+  );
+  background-size: 200%;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  animation: 2s linear infinite background-movement;
+}
+
+.skeleton__title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.skeleton__line {
+  background: linear-gradient(
+    90deg,
+    #dde2e5 0%,
+    #e2e6e8 33.33%,
+    #f3f5f5 52.08%,
+    #e3e7ea 73.96%,
+    #dde2e5 100%
+  );
+  background-size: 200%;
+  height: 20px;
+  animation: 2s linear infinite background-movement;
+}
+
+.skeleton__line_small {
+  width: 33%;
+}
+
+.skeleton__line_medium {
+  width: 50%;
+}
+
+.skeleton__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton__line_large {
+  width: 100%;
+}     
+
+@keyframes background-movement {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
+}
+                      </code>
+                    </pre>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer footer_component-page">
+        <div class="container">
+          <p class="footer__text">Reusable component library</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

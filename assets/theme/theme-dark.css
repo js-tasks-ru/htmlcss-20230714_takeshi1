@@ -1,0 +1,17 @@
+html[data-theme-dark] {
+  --icon-default: var(--grey-3);
+
+  --content-text: var(--white);
+
+  --logo-color: var(--white);
+
+  --bg-main: var(--black);
+  --bg-component-page: var(--grey-4);
+  --bg-grey: var(--grey-4);
+
+  --text-primary: #ffffff75;
+  --text-secondary: var(--grey-3);
+  --text-alternate: var(--white);
+
+  --button-alternate: var(--grey-4);
+}

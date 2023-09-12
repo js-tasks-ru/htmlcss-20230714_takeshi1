@@ -1,0 +1,9 @@
+.theme-changer_mobile {
+  border: 1px solid var(--border-secondary);
+  border-left: none;
+  border-right: none;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

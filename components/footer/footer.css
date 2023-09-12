@@ -1,18 +1,17 @@
 .footer {
   font-family: 'inter';
+  padding: 40px 0;
 }
 
 .footer_component-page {
-  padding-top: 92px;
-  padding-bottom: 56px;
+  padding: 56px 0;
 }
 
 .footer__title {
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 48px;
-  margin-top: 72px;
+  font-weight: 400;
+  font-size: 24px;
   text-align: center;
+  color: var(--text-primary);
 }
 
 .footer__description {
@@ -20,8 +19,9 @@
   font-size: 16px;
   max-width: 640px;
   line-height: 24px;
-  margin: 32px auto 136px auto;
+  margin: 32px auto 0 auto;
   text-align: center;
+  color: var(--text-primary);
 }
 
 .footer__text {
@@ -30,6 +30,22 @@
   line-height: 18px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  color: var(--grey-3);
+  color: var(--text-muted);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 70px 0;
+  }
+
+  .footer_component-page {
+    padding: 56px 0;
+  }
+
+  .footer__title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+  }
 }
