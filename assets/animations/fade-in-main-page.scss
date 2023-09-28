@@ -1,0 +1,22 @@
+@keyframes fade-in {
+  0% {
+    background: var(--bg-main);
+    border-color: var(--border-secondary);
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

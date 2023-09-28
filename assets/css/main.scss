@@ -1,0 +1,14 @@
+@import './normalize.scss';
+@import '../variables/variables.scss';
+@import '../theme/theme-dark.scss';
+@import '../fonts/fonts.scss';
+@import '../mixins/mixins.scss';
+@import '../animations/animations.scss';
+@import '../preload/preload.scss';
+@import '../components/components.scss';
+@import '../externals/prism.css';
+
+html,
+body {
+  height: 100vh;
+}

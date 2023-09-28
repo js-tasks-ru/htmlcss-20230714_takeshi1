@@ -1,0 +1,122 @@
+.main__cards {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(210px, auto));
+  gap: 16px;
+
+  @include respond-to('small') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-to('medium') {
+    gap: 30px;
+    grid-template-columns: repeat(3, minmax(350px, auto));
+  }
+}
+
+.main__title {
+  font: {
+    family: 'Inter';
+    size: 28px;
+    weight: 400;
+  }
+  margin: 24px 0 32px;
+  color: var(--text-primary);
+  line-height: 38px;
+
+  @include respond-to('small') {
+    font: {
+      size: 50px;
+      weight: 500;
+    }
+    margin: 16px 0 40px;
+    line-height: 64px;
+  }
+}
+
+.main__show-more-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  @include respond-to('small') {
+    margin-top: 67px;
+  }
+}
+
+.main__component-title {
+  font: {
+    size: 20px;
+    family: 'inter';
+    weight: 400;
+  }
+  text-transform: uppercase;
+  color: var(--text-muted);
+
+  @include respond-to('small') {
+    font-size: 28px;
+  }
+}
+
+.main__component {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main__component-buttons {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 16px;
+
+  @include respond-to('small') {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @include respond-to('medium') {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, auto);
+    gap: 32px;
+  }
+}
+
+.main__component-custom-form-elements {
+  display: grid;
+  gap: 16px;
+
+  @include respond-to('small') {
+    display: grid;
+    grid: {
+      template: repeat(3, 1fr) / repeat(3, 1fr);
+      auto-flow: column;
+    }
+    gap: 32px;
+  }
+}
+
+.main__component-inputs {
+  display: block;
+
+  @include respond-to('small') {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  @include respond-to('medium') {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+.main_component-page {
+  @include respond-to('small') {
+    display: grid;
+    grid: {
+      template-columns: 229px 1fr;
+      column-gap: 56px;
+    }
+  }
+}

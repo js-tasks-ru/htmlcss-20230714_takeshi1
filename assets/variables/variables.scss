@@ -1,0 +1,49 @@
+:root {
+  --white: #fff;
+  --black: #212429;
+  --pink: #f784ad;
+  --purple: #7048e8;
+  --purple-2: #5028c6;
+  --blue: #374fc7;
+  --blue-2: #4263eb;
+  --blue-3: #2342c0;
+  --red: #f03d3e;
+  --red-2: #d84910;
+  --grey-1: #f8f9fa;
+  --grey-2: #dde2e5;
+  --grey-3: #acb5bd;
+  --grey-4: #495057;
+  --grey-5: #f9fafc;
+
+  --link: var(--red-2);
+
+  --icon-default: var(--grey-4);
+
+  --content-text: var(--black);
+
+  --logo-color: var(--black);
+  --logo-color-component-page: var(--black);
+
+  --border-default: var(--grey-3);
+  --border-secondary: var(--grey-2);
+
+  --error: var(--red);
+  --success: var(--blue);
+
+  --bg-main: var(--white);
+  --bg-component-page: var(--grey-5);
+  --bg-grey: var(--grey-1);
+
+  --text-primary: var(--black);
+  --text-secondary: var(--grey-4);
+  --text-alternate: var(--black);
+  --text-muted: var(--grey-3);
+
+  --button-primary: var(--blue-2);
+  --button-primary-hover: var(--blue-3);
+  --button-secondary: var(--purple);
+  --button-secondary-hover: var(--purple-2);
+  --button-alternate: var(--white);
+  --button-alternate-hover: var(--black);
+  --button-text: var(--white);
+}

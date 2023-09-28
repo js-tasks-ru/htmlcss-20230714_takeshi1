@@ -1,0 +1,63 @@
+.card {
+  border-radius: 12px;
+  background: var(--bg-main);
+  box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 5%);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  text-decoration: none;
+  min-height: 295px;
+
+  @include respond-to('small') {
+    padding: 36px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    &__custom-form-elements {
+      display: grid;
+      gap: 6px;
+      grid-auto-flow: row;
+      pointer-events: none;
+
+      @include respond-to('small') {
+        display: grid;
+        grid: {
+          template: repeat(3, auto) / repeat(2, auto);
+          auto-flow: column;
+        }
+        gap: 16px;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 6px;
+    font-family: roboto, sans-serif;
+    color: var(--text-primary);
+  }
+
+  &__title {
+    font: {
+      size: 21px;
+      weight: 500;
+    }
+  }
+
+  &__subtitle {
+    font: {
+      size: 16px;
+      weight: 400;
+    }
+  }
+}
