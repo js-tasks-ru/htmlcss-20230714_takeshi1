@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+    "build": "postcss  assets/css/main.scss -o  dist/style.css",
+    "lint": "stylelint **/*.scss"
   },
   "husky": {
     "hooks": {
@@ -17,16 +19,28 @@
     ]
   },
   "keywords": [],
-  "author": "Sergey Zelenov",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
-    "mocha": "^7.1.2"
-  },
-  "dependencies": {
+    "cssnano": "^6.0.1",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+    "mocha": "^7.1.2",
+    "postcss": "^8.4.30",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-map-get": "^0.3.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-nested": "^6.0.1",
+    "postcss-nested-props": "^2.0.0",
+    "postcss-scss": "^4.0.8",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "2.8.8",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^11.0.0"
   }
 }

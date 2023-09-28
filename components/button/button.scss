@@ -1,0 +1,54 @@
+.button {
+  font: {
+    family: 'roboto';
+    weight: 500;
+    size: 16px;
+  }
+  line-height: 18.75px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 15px 40px 14px;
+  transition: 1s;
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &_primary {
+    background-color: var(--button-primary);
+    color: var(--button-text);
+
+    &:hover {
+      background-color: var(--button-primary-hover);
+    }
+  }
+
+  &_secondary {
+    background-color: var(--button-secondary);
+    color: var(--button-text);
+
+    &:hover {
+      background-color: var(--button-secondary-hover);
+    }
+  }
+
+  &_alternate {
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-default);
+
+    &:hover {
+      border: 1px solid var(--button-alternate-hover);
+    }
+
+    &-main-page {
+      background-color: var(--bg-grey);
+    }
+  }
+}

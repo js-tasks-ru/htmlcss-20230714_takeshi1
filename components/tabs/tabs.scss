@@ -1,0 +1,87 @@
+.tabs {
+  position: relative;
+
+  & pre {
+    overflow-x: auto;
+    color: var(--text-primary);
+  }
+
+  &__scroller {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+  }
+
+  &__trigger {
+    transform: translateX(-100vw);
+    position: absolute;
+  }
+
+  &__tab-item {
+    font-family: inter, sans-serif;
+    border-bottom: 5px solid transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+    transition: 0.5s;
+
+    &:hover {
+      color: var(--text-alternate);
+      border: {
+        bottom: 5px solid transparent;
+        color: var(--text-alternate);
+      }
+      transition: 0.5s;
+    }
+  }
+
+  &__content {
+    background: var(--bg-grey);
+    border: 1px var(--border-secondary);
+    display: none;
+    padding: 22px 0 40px;
+
+    @include respond-to('small') {
+      padding: 67px 0;
+    }
+  }
+
+  &__divider {
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background: var(--border-secondary);
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+
+  &__trigger-all:checked ~ &__content_all,
+  &__trigger-complex:checked ~ &__content_complex,
+  &__trigger-simple:checked ~ &__content_simple {
+    display: block;
+    border-style: solid none;
+  }
+
+  &__trigger-html:checked ~ &__content_html,
+  &__trigger-css:checked ~ &__content_css {
+    display: block;
+    background-color: var(--bg-main);
+    padding: 6px 0 0;
+
+    @include respond-to('small') {
+      padding: 34px 0 0;
+    }
+  }
+
+  &__trigger-all:checked ~ &__scroller &__tab-item-all,
+  &__trigger-complex:checked ~ &__scroller &__tab-item-complex,
+  &__trigger-simple:checked ~ &__scroller &__tab-item-simple,
+  &__trigger-html:checked ~ &__scroller &__tab-item-html,
+  &__trigger-css:checked ~ &__scroller &__tab-item-css {
+    border-color: var(--text-alternate);
+    color: var(--text-alternate);
+  }
+}

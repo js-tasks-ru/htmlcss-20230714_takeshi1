@@ -1,0 +1,83 @@
+.skeleton {
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 24px 40px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &_main {
+    max-width: 100%;
+
+    @include respond-to('small') {
+      max-width: 75%;
+    }
+
+    @include respond-to('medium') {
+      max-width: 50%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__avatar {
+    background: linear-gradient(
+      90deg,
+      #dde2e5 0%,
+      #e2e6e8 33.33%,
+      #f3f5f5 52.08%,
+      #e3e7ea 73.96%,
+      #dde2e5 100%
+    );
+    background-size: 200%;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    animation: 2s linear infinite background-movement;
+  }
+
+  &__title {
+    display: flex;
+    flex: {
+      direction: column;
+      grow: 1;
+    }
+    gap: 8px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__line {
+    background: linear-gradient(
+      90deg,
+      #dde2e5 0%,
+      #e2e6e8 33.33%,
+      #f3f5f5 52.08%,
+      #e3e7ea 73.96%,
+      #dde2e5 100%
+    );
+    background-size: 200%;
+    height: 20px;
+    animation: 2s linear infinite background-movement;
+
+    &_small {
+      width: 33%;
+    }
+
+    &_medium {
+      width: 50%;
+    }
+
+    &_large {
+      width: 100%;
+    }
+  }
+}

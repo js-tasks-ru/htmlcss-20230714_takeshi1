@@ -1,0 +1,43 @@
+.accordion {
+  font: {
+    family: 'inter';
+    weight: 400;
+    size: 16px;
+  }
+  line-height: 24px;
+
+  &__arrow-icon {
+    color: var(--icon-default);
+  }
+
+  &__details {
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 24px 32px;
+
+    &[open] {
+      padding-bottom: 32px;
+    }
+
+    &[open] .accordion__arrow-icon {
+      transform: rotate(180deg);
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__summary {
+    color: var(--text-primary);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    padding-top: 16px;
+    color: var(--text-secondary);
+  }
+}

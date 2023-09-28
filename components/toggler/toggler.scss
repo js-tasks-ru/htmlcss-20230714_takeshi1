@@ -1,0 +1,100 @@
+.toggler {
+  position: relative;
+  display: inline-block;
+
+  &__text {
+    font: {
+      family: 'inter';
+      size: 16px;
+      weight: 400;
+    }
+    line-height: 24px;
+    color: var(--text-secondary);
+  }
+
+  &__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translateX(-100vw);
+  }
+
+  &__state {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+  }
+
+  &__control {
+    width: 52px;
+    height: 28px;
+    background: var(--bg-main);
+    position: relative;
+    border: 1px solid var(--border-secondary);
+    border-radius: 16px;
+
+    &::before {
+      background: var(--grey-2);
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      border-radius: 50%;
+      content: '';
+      transition: left 0.5s ease;
+    }
+
+    &_main-page {
+      background: var(--bg-grey);
+    }
+  }
+
+  &__input + &__state &__control {
+    background: var(--bg-main);
+    border-color: var(--border-secondary);
+    animation: fade-out 0.5s ease;
+  }
+
+  &__input + &__state &__control_main-page {
+    background: var(--bg-grey);
+    border-color: var(--border-secondary);
+    animation: fade-out 0.5s ease;
+  }
+
+  &__input:checked + &__state &__control {
+    background: var(--blue-2);
+    border-color: var(--blue-2);
+    animation: fade-in 0.5s ease;
+  }
+
+  &__input:checked + &__state &__control_main-page {
+    background: var(--blue-2);
+    border-color: var(--blue-2);
+    animation: fade-in-main-page 0.5s ease;
+  }
+
+  &__input:checked + &__state &__control::before {
+    background: var(--white);
+    left: 26px;
+  }
+
+  &__input:disabled + &__state {
+    cursor: default;
+  }
+
+  &__input:disabled + &__state &__control {
+    background: var(--grey-2);
+    border-color: var(--border-secondary);
+  }
+
+  &__input:disabled + &__state &__control::before {
+    background: var(--grey-3);
+    opacity: 0.25;
+  }
+
+  &__input:disabled + &__state &__text {
+    color: var(--grey-2);
+  }
+}

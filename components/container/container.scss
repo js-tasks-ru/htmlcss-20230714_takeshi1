@@ -1,0 +1,14 @@
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: calc(100vw - 32px);
+
+  @include respond-to('small') {
+    padding: 0;
+  }
+
+  &_mb {
+    margin-bottom: 30px;
+  }
+}
